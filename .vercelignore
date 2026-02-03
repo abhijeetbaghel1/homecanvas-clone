@@ -1,0 +1,12 @@
+.git
+.gitignore
+.vercel
+.next
+node_modules
+*.md
+*.mdx
+.turbo
+.env*.local
+.idea
+.vscode
+*.log
