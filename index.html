@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Canvas Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">HomeCanvas</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Furniture</a>
+                <a href="#" class="nav-link">Lighting</a>
+                <a href="#" class="nav-link">Decor</a>
+                <a href="#" class="nav-link">Garden</a>
+                <a href="#" class="nav-link">Collections</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </a>
+                <a href="#" class="nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- Hero Section with Image Slider -->
+        <section class="hero">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1616486338815-3d98d60c8af2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                    <div class="slide-content">
+                        <h1>Elegant Living Spaces</h1>
+                        <p>Discover furniture that transforms your house into a home</p>
+                        <a href="#" class="cta-button">Explore Collection</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1615876063860-d971f6dca5dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                    <div class="slide-content">
+                        <h1>Modern Design</h1>
+                        <p>Contemporary pieces for the modern home</p>
+                        <a href="#" class="cta-button">Shop Now</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                    <div class="slide-content">
+                        <h1>Luxury Comfort</h1>
+                        <p>Experience unparalleled comfort with our premium collection</p>
+                        <a href="#" class="cta-button">View Selection</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                    <div class="slide-content">
+                        <h1>Special Offers</h1>
+                        <p>Limited time offers on selected items</p>
+                        <a href="#" class="cta-button">Shop Deals</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                    <div class="slide-content">
+                        <h1>Premium Quality</h1>
+                        <p>Crafted with the finest materials for lasting durability</p>
+                        <a href="#" class="cta-button">Discover More</a>
+                    </div>
+                </div>
+                
+                <!-- Slide 6 -->
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');">
+                    <div class="slide-content">
+                        <h1>Stylish & Functional</h1>
+                        <p>Beautiful designs that don't compromise on functionality</p>
+                        <a href="#" class="cta-button">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-nav-btn prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
+                </div>
+                <button class="slider-nav-btn next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+    
+    <script src="slider.js" defer></script>
+</body>
+</html>
