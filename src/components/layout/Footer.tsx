@@ -51,7 +51,7 @@ export default function Footer() {
   const [isHovered, setIsHovered] = useState<number | null>(null);
   const currentYear = new Date().getFullYear();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {y
     e.preventDefault();
     console.log('Subscribed with:', email);
     setIsSubscribed(true);
@@ -82,7 +82,7 @@ export default function Footer() {
               </div>
               <Link href="/" className="block">
                 <span className="text-2xl font-serif font-bold tracking-tight">
-                  {siteConfig.name}
+                  {siteConfig.brand}
                 </span>
               </Link>
               <p className="text-neutral-400">
@@ -245,7 +245,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="text-sm text-neutral-500">
-            © {currentYear} {siteConfig.name}. All rights reserved.
+            © {currentYear} {siteConfig.brand}. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
             <Link 
