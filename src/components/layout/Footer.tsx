@@ -51,7 +51,7 @@ export default function Footer() {
   const [isHovered, setIsHovered] = useState<number | null>(null);
   const currentYear = new Date().getFullYear();
 
-  const handleSubmit = (e: React.FormEvent) => {y
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Subscribed with:', email);
     setIsSubscribed(true);
