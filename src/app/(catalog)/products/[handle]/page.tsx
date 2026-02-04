@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { getProduct } from '@/lib/db';
+import { getProduct, getProducts } from '@/lib/db';
 import Container from '@/components/common/Container';
 import Button from '@/components/common/Button';
 import { formatPrice, formatDimensions } from '@/lib/utils/format';
@@ -26,8 +26,15 @@ export async function generateMetadata({
   return genMeta({
     title: product.title,
     description: product.description,
-    type: 'product',
+    type: 'article',
   });
+}
+
+export async function generateStaticParams() {
+  const products = await getProducts();
+  return products.map((product) => ({
+    handle: product.handle,
+  }));
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {

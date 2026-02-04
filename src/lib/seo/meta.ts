@@ -5,7 +5,7 @@ interface GenerateMetadataParams {
   title?: string;
   description?: string;
   image?: string;
-  type?: 'website' | 'article' | 'product';
+  type?: 'website' | 'article';
   noIndex?: boolean;
 }
 

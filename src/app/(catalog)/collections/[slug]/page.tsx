@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getCollection, getProducts } from '@/lib/db';
+import { getCollection, getProducts, getCollections } from '@/lib/db';
 import Container from '@/components/common/Container';
 import SectionHeader from '@/components/common/SectionHeader';
 import ProductGrid from '@/components/catalog/ProductGrid';
@@ -25,6 +25,13 @@ export async function generateMetadata({
     title: collection.title,
     description: collection.description,
   });
+}
+
+export async function generateStaticParams() {
+  const collections = await getCollections();
+  return collections.map((collection) => ({
+    slug: collection.slug,
+  }));
 }
 
 export default async function CollectionPage({ params }: CollectionPageProps) {

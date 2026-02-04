@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getLook, getProducts } from '@/lib/db';
+import { getLook, getProducts, getLooks } from '@/lib/db';
 import Container from '@/components/common/Container';
 import ProductGrid from '@/components/catalog/ProductGrid';
 import { generateMetadata as genMeta } from '@/lib/seo/meta';
@@ -23,6 +23,13 @@ export async function generateMetadata({
     title: look.title,
     description: look.description,
   });
+}
+
+export async function generateStaticParams() {
+  const looks = await getLooks();
+  return looks.map((look) => ({
+    slug: look.slug,
+  }));
 }
 
 export default async function LookPage({ params }: LookPageProps) {
