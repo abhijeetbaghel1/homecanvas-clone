@@ -7,12 +7,12 @@ import { siteConfig } from '@/lib/config/site';
 import { useCart } from '@/state/cart';
 import { useWishlist } from '@/state/wishlist';
 import { cn } from '@/lib/utils';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 import {
   Search,
   ShoppingBag,
   Heart,
   Menu,
-  X,
   ChevronDown,
   Phone,
   Mail,

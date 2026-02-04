@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: [
       'localhost', 
@@ -16,7 +15,12 @@ const nextConfig = {
       },
     ],
   },
+  // Enable static exports for Netlify
+  output: 'export',
+  // Optional: Add basePath if your site is hosted in a subdirectory
+  // basePath: '/your-base-path',
+  // Optional: Add assetPrefix if your assets are hosted on a CDN
+  // assetPrefix: 'https://your-cdn-url.com',
 };
 
 module.exports = nextConfig;
-
