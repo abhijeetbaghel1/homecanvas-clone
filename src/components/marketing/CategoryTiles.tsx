@@ -47,7 +47,7 @@ const categories = [
 ];
 export default function CategoryTiles() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-neutral-50">
       // Update the container and grid layout
 <div className="container mx-auto px-4">
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">

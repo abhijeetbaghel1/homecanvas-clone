@@ -20,7 +20,7 @@ export default async function HomePage() {
       <ShopTheLookGrid />
 
       {/* Bestsellers */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-neutral-50">
         <Container>
           <SectionHeader title="Bestsellers" subtitle="Our most loved pieces" />
           <ProductGrid products={bestsellers.slice(0, 4)} />
@@ -39,7 +39,7 @@ export default async function HomePage() {
       </section>
 
       {/* Bespoke CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-neutral-50">
         <Container>
           <div className="max-w-2xl mx-auto">
             <SectionHeader
@@ -75,7 +75,7 @@ export default async function HomePage() {
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-white text-accent-walnut font-semibold rounded-md hover:bg-neutral-100 transition-colors"
+                className="px-6 py-2 bg-neutral-50 text-accent-walnut font-semibold rounded-md hover:bg-neutral-100 transition-colors border border-neutral-200"
               >
                 Subscribe
               </button>

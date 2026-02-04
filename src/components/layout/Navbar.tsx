@@ -144,7 +144,7 @@ const NavItem = ({ item }: { item: NavItem }) => {
       {/* Dropdown Menu */}
       {hasSubItems && (
         <div 
-          className={`absolute left-0 top-full w-56 bg-white shadow-lg z-50 border-t-2 border-accent-walnut transition-all duration-300 transform origin-top ${
+          className={`absolute left-0 top-full w-56 bg-neutral-50 shadow-lg z-50 border-t-2 border-accent-walnut transition-all duration-300 transform origin-top ${
             isHovered ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-95 pointer-events-none'
           }`}
           onMouseEnter={() => setIsHovered(true)}
@@ -214,11 +214,11 @@ function MobileMenu({
 
   return (
     <div 
-      className={`fixed inset-0 z-50 overflow-y-auto bg-white transform transition-all duration-300 ease-in-out ${
+      className={`fixed inset-0 z-50 overflow-y-auto bg-neutral-50 transform transition-all duration-300 ease-in-out ${
         isAnimating ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
       }`}
     >
-      <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-white sticky top-0 z-10 shadow-sm">
+      <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-neutral-50 sticky top-0 z-10 shadow-sm">
         <Link 
           href="/" 
           className="text-xl font-serif font-bold text-gray-900"
@@ -285,7 +285,7 @@ function MobileMenu({
         ))}
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4">
+      <div className="fixed bottom-0 left-0 right-0 bg-neutral-50 border-t border-gray-200 p-4">
         <div className="flex justify-between items-center">
           <Link 
             href="/account" 
